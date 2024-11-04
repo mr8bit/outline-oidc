@@ -58,7 +58,7 @@ x-app-env : &app-env
     # Application secret
     - SECRET_KEY=${SECRET_KEY:-60gp0byfz2dvffa45cxl20p1scy9xbpf6d8c5y0geejgkyp1b5}
     # DATA STORE SETTINGS
-    - USE_MINIO=${USE_MINIO:-1}
+    - USE_MINIO=0
     - AWS_REGION=${AWS_REGION:-""}
     - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-"access-key"}
     - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-"secret-key"}

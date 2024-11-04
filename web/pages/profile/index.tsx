@@ -370,7 +370,7 @@ const ProfileSettingsPage: NextPageWithLayout = observer(() => {
                 <Controller
                   name="user_timezone"
                   control={control}
-                  rules={{ required: "Time zone is required" }}
+                  rules={{ required: "This field is required" }}
                   render={({ field: { value, onChange } }) => (
                     <CustomSearchSelect
                       value={value}
@@ -378,7 +378,7 @@ const ProfileSettingsPage: NextPageWithLayout = observer(() => {
                       options={timeZoneOptions}
                       onChange={onChange}
                       optionsClassName="w-full"
-                      buttonClassName={errors.user_timezone ? "border-red-500" : "border-none"}
+                      buttonClassName="border-none"
                       className="rounded-md border-[0.5px] !border-custom-border-200"
                       input
                     />

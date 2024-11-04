@@ -55,7 +55,7 @@ from plane.db.models import (
 from plane.bgtasks.issue_activites_task import issue_activity
 from plane.utils.issue_filters import issue_filters
 from plane.utils.analytics_plot import burndown_plot
-
+from plane.app.permissions.workspace import WorkspaceUserPermission
 
 class CycleViewSet(WebhookMixin, BaseViewSet):
     serializer_class = CycleSerializer

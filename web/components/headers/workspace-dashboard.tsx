@@ -29,31 +29,7 @@ export const WorkspaceDashboardHeader = () => {
             </Breadcrumbs>
           </div>
         </div>
-        <div className="flex items-center gap-3 px-3">
-          <a
-            href="https://plane.so/changelog"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-shrink-0 items-center gap-1.5 rounded bg-custom-background-80 px-3 py-1.5 text-xs font-medium"
-          >
-            <Zap size={14} strokeWidth={2} fill="rgb(var(--color-text-100))" />
-            {"What's new?"}
-          </a>
-          <a
-            className="flex flex-shrink-0 items-center gap-1.5 rounded bg-custom-background-80 px-3 py-1.5 text-xs font-medium"
-            href="https://github.com/makeplane/plane"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={resolvedTheme === "dark" ? githubWhiteImage : githubBlackImage}
-              height={16}
-              width={16}
-              alt="GitHub Logo"
-            />
-            Star us on GitHub
-          </a>
-        </div>
+        <div className="flex items-center gap-3 px-3"/>
       </div>
     </>
   );

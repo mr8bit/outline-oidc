@@ -41,8 +41,6 @@ export const IssueList: FC<IIssueList> = observer((props) => {
 
   return (
     <>
-      {subIssueHelpers.preview_loader.includes(parentIssueId) ? "Loading..." : null}
-
       <div className="relative">
         {subIssueIds &&
           subIssueIds.length > 0 &&

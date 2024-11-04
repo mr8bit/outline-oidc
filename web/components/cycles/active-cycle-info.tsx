@@ -26,7 +26,7 @@ import { ICycle, TCycleLayout, TCycleView } from "@plane/types";
 import { renderFormattedDate, findHowManyDaysLeft } from "helpers/date-time.helper";
 import { truncateText } from "helpers/string.helper";
 // constants
-import { STATE_GROUPS_DETAILS } from "constants/cycle";
+import { CYCLE_STATE_GROUPS_DETAILS } from "constants/cycle";
 
 export type ActiveCycleInfoProps = {
   cycle: ICycle;
@@ -53,7 +53,7 @@ export const ActiveCycleInfo: FC<ActiveCycleInfoProps> = (props) => {
     cancelled: cycle.cancelled_issues,
   };
 
-  const progressIndicatorData = STATE_GROUPS_DETAILS.map((group, index) => ({
+  const progressIndicatorData = CYCLE_STATE_GROUPS_DETAILS.map((group, index) => ({
     id: index,
     name: group.title,
     value: cycle.total_issues > 0 ? ((cycle[group.key as keyof ICycle] as number) / cycle.total_issues) * 100 : 0,
@@ -231,7 +231,7 @@ export const ActiveCycleInfo: FC<ActiveCycleInfoProps> = (props) => {
                         <span
                           className="block h-3 w-3 rounded-full "
                           style={{
-                            backgroundColor: STATE_GROUPS_DETAILS[index].color,
+                            backgroundColor: CYCLE_STATE_GROUPS_DETAILS[index].color,
                           }}
                         />
                         <span className="text-xs capitalize">{group}</span>

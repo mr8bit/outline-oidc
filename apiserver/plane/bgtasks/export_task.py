@@ -123,6 +123,7 @@ def upload_to_s3(zip_file, workspace_id, token_id, slug):
             },
             ExpiresIn=expires_in,
         )
+        print(presigned_url)
 
     exporter_instance = ExporterHistory.objects.get(token=token_id)
 

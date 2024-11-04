@@ -232,6 +232,7 @@ AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID", "access-key")
 AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY", "secret-key")
 AWS_STORAGE_BUCKET_NAME = os.environ.get("AWS_S3_BUCKET_NAME", "uploads")
 AWS_REGION = os.environ.get("AWS_REGION", "")
+AWS_S3_REGION_NAME = os.environ.get("AWS_REGION", "")
 AWS_DEFAULT_ACL = "public-read"
 AWS_QUERYSTRING_AUTH = False
 AWS_S3_FILE_OVERWRITE = False
@@ -328,7 +329,7 @@ ANALYTICS_SECRET_KEY = os.environ.get("ANALYTICS_SECRET_KEY", False)
 ANALYTICS_BASE_API = os.environ.get("ANALYTICS_BASE_API", False)
 
 # Use Minio settings
-USE_MINIO = int(os.environ.get("USE_MINIO", 0)) == 1
+USE_MINIO = int(0)
 
 # Posthog settings
 POSTHOG_API_KEY = os.environ.get("POSTHOG_API_KEY", False)

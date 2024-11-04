@@ -58,11 +58,6 @@ const navigation = (workspaceSlug: string, projectId: string) => [
     Icon: PhotoFilterIcon,
   },
   {
-    name: "Pages",
-    href: `/${workspaceSlug}/projects/${projectId}/pages`,
-    Icon: FileText,
-  },
-  {
     name: "Settings",
     href: `/${workspaceSlug}/projects/${projectId}/settings`,
     Icon: Settings,
